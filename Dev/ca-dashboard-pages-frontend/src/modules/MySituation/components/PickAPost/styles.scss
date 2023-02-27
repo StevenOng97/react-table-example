@@ -1,0 +1,43 @@
+@import "../../../../styles/mixins.scss";
+
+.situation-pick-a-post-container {
+  table {
+    table-layout: fixed;
+    tr {
+      td:first-child {
+        padding-left: 59px !important;
+        @include Responsive(MD) {
+          width: 40%;
+          padding-left: 2em;
+          padding: 1em 2em !important;
+        }
+      }
+    }
+    th:first-child {
+      @include Responsive(MD) {
+        padding-left: 2em;
+        padding: 1em 2em !important;
+      }
+    }
+    th:first-child,
+    th:nth-child(4) {
+      width: 12%;
+    }
+    th:nth-child(2),
+    th:nth-child(3) {
+      width: 15%;
+    }
+    th {
+      @include Responsive(MD) {
+        width: auto !important;
+      }
+    }
+  }
+  .truncated-text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    display: inline-block;
+  }
+}

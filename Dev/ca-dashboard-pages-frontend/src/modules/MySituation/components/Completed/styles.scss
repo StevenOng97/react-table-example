@@ -1,0 +1,42 @@
+@import "../../../../styles/mixins.scss";
+
+.situation-completed-container {
+  table {
+    tr {
+      td:first-child {
+        padding-left: 59px;
+        @include Responsive(MD) {
+          width: 40%;
+          padding: 1em 2em !important;
+          padding-left: 2em !important;
+        }
+      }
+    }
+    th:first-child {
+      @include Responsive(MD) {
+        padding-left: 2em !important;
+        padding: 1em 2em !important;
+      }
+    }
+    th:first-child,
+    th:nth-child(2),
+    th:nth-child(3) {
+      width: 15%;
+      @include Responsive(MD) {
+        width: auto !important;
+      }
+    }
+    th:last-child {
+      @include Responsive(MD) {
+        width: auto !important;
+      }
+    }
+  }
+  .truncated-text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    display: inline-block;
+  }
+}

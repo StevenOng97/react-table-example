@@ -1,0 +1,22 @@
+.situation-completed-container {
+  table {
+    table-layout: fixed;
+    tr {
+      td:first-child {
+        padding-left: 59px !important;
+      }
+    }
+    th:first-child,
+    th:nth-child(2),
+    th:nth-child(3) {
+      width: 15%;
+    }
+  }
+  .truncated-text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    display: inline-block;
+  }
+}

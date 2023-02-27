@@ -1,0 +1,19 @@
+@import '../../styles/mixins';
+
+$contentHeight: calc(100vh - 76px);
+$content-background: #e5e5e5;
+
+.right-col {
+  width: calc(100% - 260px);
+  @include Responsive(MD) {
+    flex: 1;
+  }
+  .content {
+    padding: 23px 32px;
+    background: $content-background;
+    min-height: $contentHeight;
+  }
+  .set-height {
+    height: calc(100vh - 76px);
+  }
+}

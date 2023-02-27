@@ -1,0 +1,75 @@
+.settings-container {
+  display: flex;
+  flex: 1;
+  input, select, option {
+    background: #f7f8fa;
+  }
+  .big-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    height: unset;
+    .title-wrapper {
+      .title {
+        padding: 8px 12px;
+        cursor: pointer;
+        transition: color 0.5s;
+        &:hover {
+          color: #004789;
+        }
+      }
+      .active {
+        border-bottom: 3px solid #141b41;
+        opacity: 1;
+        font-weight: bold;
+      }
+    }
+  }
+  .action-wrapper {
+    img {
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover {
+        color: #004789;
+        filter: saturate(5);
+      }
+    }
+  }
+  li {
+    list-style: none;
+  }
+
+  .banks-card-wrapper {
+    button {
+      max-width: unset;
+    }
+  }
+  .bank {
+    .button-wrapper {
+      text-align: right;
+      margin-left: auto;
+
+      button {
+        min-width: 80px;
+        margin-right: 12px;
+        &:last-child {
+          margin-right: unset;
+        }
+      }
+    }
+  }
+
+  .creditCard {
+    .button-wrapper {
+      text-align: right;
+      margin-left: auto;
+      button {
+        min-width: 80px;
+        margin-right: 12px;
+        &:last-child {
+          margin-right: unset;
+        }
+      }
+    }
+  }
+}

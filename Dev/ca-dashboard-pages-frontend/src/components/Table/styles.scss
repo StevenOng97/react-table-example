@@ -1,0 +1,75 @@
+$tableHeaderColor: #252450;
+$tableHeaderBgColor: #eaeff5;
+$textColor: #777777;
+$fontStyle: "Poppins";
+$statusButtonBorder: #FFC908;
+$white: #ffffff;
+
+.minus-margin-image:nth-child(n+2) {
+  margin-left: -20px;
+}
+
+.custom-table {
+  height: 500px;
+  background: $white;
+  span {
+    color: $textColor;
+    opacity: 1;
+  }
+  thead {
+    background-color: $tableHeaderBgColor;
+  }
+  th {
+    color: $tableHeaderColor;
+  }
+
+  th,
+  td {
+    padding: 1em 2em !important;
+  }
+
+  th:first-child {
+    padding-left: 59px !important;
+    width: 20%;
+  }
+
+  th:last-child {
+    width: 15%;
+  }
+
+  td {
+    color: $textColor;
+    padding-bottom: 0 !important;
+  }
+
+  tr {
+    vertical-align: middle;
+  }
+  
+  .status-button {
+    border: 1px solid $statusButtonBorder;
+    border-radius: 40px;
+    color: #141b41;
+    font-family: 'Poppins';
+    padding: 0.15em 0.5em;
+    padding-right: 2em;
+    background: $white;
+    opacity: 0.5;
+    transition: all 0.5s;
+    &:hover {
+      background-color: $statusButtonBorder;
+    }
+  }
+
+  .icon {
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      color: #004789;
+      filter: saturate(5);
+    }
+  }
+  .invite-button {
+    opacity: 1 !important;
+  }
+}

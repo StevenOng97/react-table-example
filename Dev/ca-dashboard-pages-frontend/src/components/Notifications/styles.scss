@@ -1,0 +1,26 @@
+.stepper {
+  margin: 0 28px;
+  .line {
+    width: 2px;
+    background-color: lightgrey !important;
+  }
+  .lead {
+    font-size: 1.1rem;
+  }
+  .title {
+    margin: 24px 0;
+    font-family: "Poppins";
+    color: #303972;
+  }
+  .rounded-icons {
+    background: #004789;
+    padding: 8px 12px;
+  }
+  .text-wrapper {
+    margin-left: 16px;
+    width: fit-content;
+    .bi::before {
+      background-size: 16px 16px;
+    }
+  }
+}

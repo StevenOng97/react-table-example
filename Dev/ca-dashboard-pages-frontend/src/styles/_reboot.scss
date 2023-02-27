@@ -1,0 +1,113 @@
+@import "variables";
+
+$mobileScreen: "only screen and (min-width: 320px) and (max-width: 998px)";
+$mobileScreen_768: "only screen and (min-width: 320px) and (max-width: 768px)";
+
+@mixin responsive_320() {
+  @media #{$mobileScreen} {
+    @content;
+  }
+}
+
+@mixin responsive_768() {
+  @media #{$mobileScreen_768} {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+.btn {
+  min-width: 120px;
+  max-width: 150px;
+}
+
+.remove-btn-border {
+  outline: 0;
+  border-style: none;
+}
+
+ul {
+  padding-left: 0 !important;
+  li {
+    list-style: none;
+  }
+}
+
+.nav-link {
+  color: $light !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headerFont;
+  margin: 0;
+  padding: 0;
+}
+
+span,
+p,
+a,
+.text {
+  font-family: $textFont;
+  color: #141b41;
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+td,
+th {
+  font-family: $textFont;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.background-primary {
+  background-color: $primary;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.error-text {
+  min-height: 20px;
+}
+
+table {
+  table-layout: fixed;
+}
+
+.truncated-text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.loading {
+  pointer-events: none;
+  opacity: 0.7;
+  background: #e5e5e5;
+}

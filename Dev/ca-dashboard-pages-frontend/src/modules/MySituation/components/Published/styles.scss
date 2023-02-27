@@ -1,0 +1,20 @@
+@import '../../../../styles/mixins.scss';
+
+.published-container {
+  th:first-child {
+    width: 65%;
+    @include Responsive(MD) {
+      width: 40%;
+    }
+  }
+  th:last-child {
+    @include Responsive(MD) {
+      width: 25%;
+    }
+  }
+  tr {
+    td:first-child {
+      padding-left: 59px !important;
+    }
+  }
+}

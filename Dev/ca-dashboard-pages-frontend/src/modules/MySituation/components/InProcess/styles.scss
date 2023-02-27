@@ -1,0 +1,30 @@
+@import "../../../../styles/mixins.scss";
+
+.situation-in-process-container {
+  th:first-child {
+    width: 20%;
+    // width: 65%;
+    @include Responsive(MD) {
+      width: 40%;
+      padding-left: 2em;
+      padding: 1em 2em !important;
+    }
+  }
+  th:last-child {
+    @include Responsive(MD) {
+      width: auto;
+    }
+    @include Responsive(SM) {
+      width: auto;
+    }
+  }
+  tr {
+    td:first-child {
+      padding-left: 59px !important;
+      @include Responsive(MD) {
+        padding-left: 2em;
+        padding: 1em 2em !important;
+      }
+    }
+  }
+}

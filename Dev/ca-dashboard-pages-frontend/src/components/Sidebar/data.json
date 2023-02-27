@@ -1,0 +1,55 @@
+[
+    {
+        "title": "My situation",
+        "icon": "bi-gear-fill",
+        "mainPath": "/post",
+        "childrens": [
+            {
+                "title": "Drafted",
+                "path": "/post/drafted"
+            },
+            {
+                "title": "Published",
+                "path": "/post/published"
+            },
+            {
+                "title": "In-Process",
+                "path": "/post/in-process"
+            },
+            {
+                "title": "Completed",
+                "path": "/post/completed"
+            }
+        ]
+    },
+    {
+        "title": "My Advice",
+        "icon": "bi-info-circle-fill",
+        "mainPath": "advice",
+        "childrens": [
+            {
+                "title": "In-Progress",
+                "path": "/advice/in-progress"
+            },
+            {
+                "title": "Completed",
+                "path": "/advice/completed"
+            }
+        ]
+    },
+    {
+        "title": "My Financials",
+        "icon": "bi-question-circle-fill",
+        "path": "/financials"
+    },
+    {
+        "title": "Account Settings",
+        "icon": "bi-bug",
+        "path": "/account-settings"
+    },
+    {
+        "title": "Log Out",
+        "icon": "bi-toggle2-off",
+        "path": ""
+    }
+]

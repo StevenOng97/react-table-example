@@ -1,0 +1,109 @@
+@import "../../styles/variables";
+
+.profile-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .big-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    .header-wrapper {
+      margin: -23px -34px;
+      min-height: 120px;
+      border-radius: 8px;
+      background: $primary;
+      position: relative;
+      justify-content: space-between;
+      padding: 0 32px;
+      .avatar-wrapper {
+        position: absolute;
+        left: 32px;
+        background-image: url("../../assets/images/Profile/avatar.png");
+        width: 182px;
+        height: 150px;
+        top: 25px;
+      }
+      .background-container {
+        display: flex;
+        align-items: flex-end;
+        .orange {
+          background: $orange;
+          height: 20px;
+          width: 120px;
+          border-top-left-radius: 8px;
+        }
+        .yellow {
+          background: $yellow;
+          height: 35px;
+          width: 160px;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+        }
+      }
+    }
+
+    .feedback-wrapper {
+      flex-grow: 2;
+      display: flex;
+      align-items: center;
+      .situations,
+      .performances {
+        flex-basis: 40%;
+        .posted,
+        .advised {
+          .amount {
+            flex-basis: 30%;
+          }
+        }
+      }
+    }
+
+    .profile-card-wrapper {
+      flex-grow: 1;
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+        .profile-card {
+          flex-basis: 30%;
+          padding: 0 20px;
+          min-height: 70px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          border: 1px solid #e2e8f0;
+          border-radius: 8px;
+        }
+        .purple {
+          border-left: 1px solid $purple;
+          border-left-width: thick;
+        }
+        .yellow {
+          border-left: 1px solid $yellow;
+          border-left-width: thick;
+        }
+        .orange {
+          border-left: 1px solid $orange;
+          border-left-width: thick;
+        }
+        .green {
+          border-left: 1px solid $cyan;
+          border-left-width: thick;
+        }
+        .red {
+          border-left: 1px solid $red;
+          border-left-width: thick;
+        }
+        .blue {
+          border-left: 1px solid $blue;
+          border-left-width: thick;
+        }
+      }
+    }
+  }
+}
